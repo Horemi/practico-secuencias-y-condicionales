@@ -1,0 +1,24 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main()
+{
+    float D, C, A, V, r, p;
+    cout<<"ingrese el valor del Diametro en cm: ";
+    cin>>D;
+    
+    p=M_PI;
+    r=(D/2.0);
+     
+     C=(p)*D;
+    cout<<"La Circuferencia de la esfera es: "<<C<<"cm"<<endl;
+     A=4.0*(p)*pow(r,2);
+    cout<<"El Area de la esfera es: "<<A<<"cm2"<<endl;
+     V=(4.0/3.0)*(p)*pow(r,3);
+    cout<<"El Volumen de la esfera es: "<<V<<"cm3"<<endl;
+
+    return 0;
+}
+
