@@ -1,0 +1,26 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    int n, n0, H, M, S;
+    
+    cout << "Escriba la cantidad de segundos a convertir: ";
+    cin >> n;
+    if(n>=0){
+        H = trunc(n/3600);
+        n0 = n%3600;
+        M = trunc(n0/60);
+        S = n0%60;
+        cout << "segundos: "<< n << " -> " << H << " horas, " << M << " minutos, " << S << " segundos"<<endl;
+    }
+    else{
+        cout << "el numero debe ser mayor a cero (0)";
+        return 0;
+    }
+    
+    return 0;
+}
+
