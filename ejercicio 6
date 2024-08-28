@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int hora, min, seg, horah;
+    cout<<"ingrese la hora en formato de 24h: ";    cin>>hora;
+    cout<<"ingrese los minutos de la hora que ingreso: ";    cin>>min;
+    cout<<"ingrese los segundos de la hora que ingreso: ";    cin>>seg;
+    horah = hora-12;
+    cout<<"la hora que ingresó en formato de 24h fue: "<<hora<<":"<<min<<":"<<seg<<". La hora en formato de 12h es: ";
+    if(hora>=12){
+        cout<<horah<<":"<<min<<":"<<seg<<"PM";  
+    }
+    else{
+        cout<<horah<<":"<<min<<":"<<seg<<"PM";
+    }
+    return 0;
+}
