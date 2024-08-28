@@ -1,0 +1,130 @@
+#include <iostream>
+using namespace std;
+	
+int main(){
+	
+	int dia, mes, a;
+	
+	cout<<"este programa le indicara que epoca es según la fecha ingresada. "<<endl;
+	
+	do{
+		
+		cout<<"ingrese el dia (en numero): ";   cin>>dia;
+		
+		if(dia>31){
+			
+			cout<<"--------------"<<endl;
+			cout<<"ESTE DIA NO EXISTE!"<<endl;
+			cout<<"INGRESE OTRO"<<endl;
+			cout<<"--------------"<<endl;
+		}
+		
+	}while(dia>31);
+	
+	cout<<"*"<<endl;
+	
+	do{
+		
+		cout<<"ingrese el mes (en numero): ";   cin>>mes;
+		
+		if(mes>12){
+			cout<<"--------------"<<endl;
+			cout<<"ESTE MES NO EXISTE!"<<endl;
+			cout<<"INGRESE OTRO"<<endl;
+			cout<<"--------------"<<endl;
+		}
+		
+	}while(mes>12);
+	
+	cout<<"*"<<endl;
+	
+	do{
+		
+		cout<<"ingrese el año en numeros: "; cin>>a;
+		
+		if(a>2024){
+			cout<<"--------------"<<endl;
+			cout<<"ESTE PROGRAMA SOLO ACEPTA DESDE EL 2000 HASTA 2024"<<endl;
+			cout<<"ingrese otro"<<endl;
+			cout<<"--------------"<<endl;
+		}
+		
+	}while(a>2024);
+	
+	
+	
+	cout<<""<<endl;
+	
+	
+	if(mes>2 && mes<7){
+		
+		if(mes==3 && dia<21){
+			cout<<"la epoca del anho es: verano"<<endl;
+		}
+
+		else if(mes>=3 && mes!=6){
+			cout<<"la epoca del anho es: otonho"<<endl;
+		}
+			else if(mes<=6 && dia<21){
+		
+				cout<<"la epoca del anho es: otonho"<<endl;
+			}
+				else{
+					cout<<"la epoca del anho es: invierno";
+				}
+				
+	}
+	else{
+		
+		
+		if(mes>5 && mes<10){
+		
+		if(mes>=6 && mes!=9){
+			cout<<"la epoca del anho es: invierno"<<endl;
+		}
+
+		else if(mes==9 && dia<=20){
+			cout<<"la epoca del anho es: invierno"<<endl;
+		}
+			else if(mes<=6 && dia<21){
+					cout<<"la epoca del anho es: primavera";
+				}
+				else{
+					cout<<"la epoca del anho es: primavera";
+				}
+		}
+		
+		else{
+			
+			if(mes>8 && mes<=12){
+				if(mes>=9 && mes!=12){
+					cout<<"la epoca del anho es: primavera"<<endl;
+				}
+		
+				else if(mes==12 && dia>20){
+					cout<<"la epoca del anho es: verano"<<endl;
+				}
+					else{
+						cout<<"la epoca del anho es: primavera";
+					}
+			}
+			
+			else{
+				if(mes>=1 && mes<=3){
+					if(mes>=1 && mes!=3){
+						cout<<"la epoca del anho es: verano"<<endl;
+					}
+			
+					else {
+						cout<<"la epoca del anho es: otonho"<<endl;
+					}
+					
+				}
+				else{
+					cout<<"error";
+				}
+			}	
+		}		
+	}
+	return 0;
+}
