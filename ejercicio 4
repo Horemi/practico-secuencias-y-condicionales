@@ -17,7 +17,7 @@ int main()
     S= H*precio;
     
     if(S>=8272){
-        S=S*0,87;
+        S=S*0.87;
         cout<<"el salario es: "<<S;
     }
     
