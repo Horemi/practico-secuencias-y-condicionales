@@ -1,0 +1,20 @@
+//una edad en rango de 18 a 25
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int ed1;
+    cout<<"imngresa la edad: ";
+    cin>>ed1;
+    
+    if (18<=ed1  && ed1<=25){
+        cout<<"la edad esta en un rango de 18 a 25: "<<ed1;
+    }
+    else{
+        cout<<"la edad esta fuera del rango de 18 a 25: "<<ed1;
+    }
+
+    return 0;
+}
