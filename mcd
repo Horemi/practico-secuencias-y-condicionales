@@ -1,0 +1,34 @@
+#include <iostream>
+#include <limits>
+
+using namespace std;
+
+int main (){
+    int cn, num, mcm;
+    int mayor=numeric_limits<int>::min();
+    int menor=numeric_limits<int>::max();
+    
+    do{
+        cout<<"ingresa la cantidad de numeros: ";
+        cin>>cn;
+    }while(cn<=0);
+    
+    for(int i=0; i<cn;i++) //i=i+1
+    {
+        cout<<"ingresa el numero "<<i+1<<": ";
+        cin>>num;
+        if(num>mayor)
+            mayor=num;
+        if(num<menor)
+            menor=num;
+    }
+    
+    do{
+    mcm=mayor%menor;
+    mcm=menor%mcm;
+    }while(mcm>0);
+    
+    cout<<"el maximocomun divisor es: "<<mcm;
+            
+    return 0;
+}    
